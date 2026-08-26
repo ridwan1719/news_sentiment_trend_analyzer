@@ -103,7 +103,7 @@ hist_fig = px.histogram(df, x="polarity", color="Sentiment", title=f"Sentiment P
 st.plotly_chart(hist_fig, use_container_width=True)
 
 for index, row in df.iterrows():
-    st.subheader(f"Title: {row['title']}")
+    st.subheader(f"{row['title']}")
     st.write(f"Source: {row['Source']}")
     st.write(f"Published At: {row['Published At']}")
     st.write(f"Sentiment: {row['Sentiment']}")
