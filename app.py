@@ -26,7 +26,7 @@ st.markdown("""
 """
 )
 
-default_topics = ["AI", "Bangladesh Cricket", "US Economy", "Bangladesh Economy", "FDI Bangladesh", "Crypto Currency", "Bitcoin", "EV"]
+default_topics = ["AI", "Ethereum", "US Economy", "JPMorgan Chase", "Morgan Stanley", "Crypto Currency", "Bitcoin", "EV", "NVidia", "OpenAI", "Anthropic"]
 
 if "topics" not in st.session_state:
     st.session_state.topics = default_topics
