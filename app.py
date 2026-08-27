@@ -64,6 +64,9 @@ news_data = []
 
 for article in articles:
     title = article["title"]
+    if not isinstance(title, str) or not title.strip():
+        continue
+    
     analysis = TextBlob(title)
     polarity = analysis.sentiment.polarity
 
